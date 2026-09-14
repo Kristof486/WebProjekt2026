@@ -1,12 +1,15 @@
 const byId = (id) => document.getElementById(id);
 const uzemanyag = document.querySelectorAll("input[name='uzemanyag']");
+
 const divNemElektromos = byId("nemelektromos");
 const divElektromos = byId("elektromosoknak");
 const selectEvjarat = byId("evjarat");
 const budget = byId("budget");
 const datum = byId("date");
+const uzenet = document.getElementById("message");
+const KarakterHosszusag = document.getElementById("charCount");
 
-
+// Évjárat
 const alapOpcio = document.createElement("option");
 alapOpcio.value = "";
 alapOpcio.textContent = "Válassz évjáratot...";
@@ -51,8 +54,7 @@ const keret = Number(budget.value);
 
 if (
     budget.value !== "" &&
-    (keret < 500000 || keret > 50000000)
-    )
+    (keret < 500000 || keret > 50000000))
     {
         budget.classList.add();
         helyes = false;
@@ -80,5 +82,8 @@ datum.min = ev + "-" + honap + "-" + nap; //Ez úgy működik, hogy a mai naptó
 }
 datumBeallitasa();
 
-
+// Karakterhosszúság
+uzenet.addEventListener("input", function () {
+    KarakterHosszusag.textContent = uzenet.value.length;
+});
 
