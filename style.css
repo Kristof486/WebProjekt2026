@@ -354,6 +354,15 @@ footer p{
 .empty-state h2{
     color:var(--text)
 }
+
+.kepfelirat{
+    text-align:center;
+    background:#fff;
+    padding:70px 20px;
+    border-radius:20px;
+    color:var(--muted)
+}
+
 @media(max-width:992px){
     .service-grid{
         grid-template-columns:repeat(2,1fr)

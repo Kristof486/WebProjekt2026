@@ -87,3 +87,4 @@ uzenet.addEventListener("input", function () {
     KarakterHosszusag.textContent = uzenet.value.length;
 });
 
+

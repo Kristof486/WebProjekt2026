@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+.form-page{
+    background:var(--light)
+}
+
+.navbar{
+    background:rgba(11,18,32,.97);
+    padding:14px 0
+}
+
+.form-wrapper,.results-wrapper{
+    padding:70px 0 100px;
+    min-height:calc(100vh - 130px)
+}
+
+.form-header{
+    margin-bottom:35px
+}
+
+.navbar-brand{font-size:1.45rem;
+    letter-spacing:-.04em
+}
+
+.navbar-brand span{
+    color:var(--primary)
+}
