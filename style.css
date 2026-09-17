@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
-:root{
-    --dark:#0b1220;
-    --dark2:#111c30;--primary:#e83b3b;
-    --text:#182235;--muted:#687386;
-    --light:#f4f6f9;
-    --white:#fff;
-}
-
 *{
     box-sizing:border-box
 }
@@ -17,7 +9,7 @@ html
 }
 body{
     font-family:Inter,Arial,sans-serif;
-        color:var(--text);margin:0;
+        color:#182235;margin:0;
         background:#fff
     }
 .navbar{
@@ -30,18 +22,18 @@ body{
 }
 
 .navbar-brand span{
-    color:var(--primary)
+    color:#e83b3b
 }
 .nav-link{
-    color:#dce3ef!important
+    color:#dce3ef
 }
 .nav-link:hover{
-    color:#fff!important
+    color:#fff
 }
 
 .btn-primary{
-    background:var(--primary);
-    border-color:var(--primary);
+    background:#e83b3b;
+    border-color:#e83b3b;
     font-weight:700
 }
 .btn-primary:hover{
@@ -68,7 +60,7 @@ body{
 .eyebrow{
     font-size:.76rem;
     font-weight:800;
-    letter-spacing:.16em;color:var(--primary);
+    letter-spacing:.16em;color:#e83b3b;
     margin-bottom:10px
 }
 .hero-stats{
@@ -88,7 +80,7 @@ body{
 }
 .hero-card{
     background:#fff;
-    color:var(--text);
+    color:#182235;
     border-radius:20px;
     overflow:hidden;
     box-shadow:0 30px 70px rgba(0,0,0,.35);
@@ -107,7 +99,7 @@ body{
     margin:0 0 5px
 }
 .hero-card-body p{
-    color:var(--muted);
+    color:#687386;
     margin:0 0 15px
 }
 .hero-card-body strong{
@@ -117,7 +109,7 @@ body{
     position:absolute;
     top:15px;
     left:15px;
-    background:var(--primary);
+    background:#e83b3b;
     color:#fff;
     padding:7px 11px;
     border-radius:8px;
@@ -133,7 +125,7 @@ body{
 }
 
 .section-light{
-    background:var(--light)
+    background:#f4f6f9
 }
 .section-heading{
     display:flex;
@@ -149,7 +141,7 @@ body{
     margin:0
 }
 .section-heading>p{
-    color:var(--muted);
+    color:#687386;
     max-width:480px;
     margin:0;
     line-height:1.7
@@ -185,7 +177,7 @@ body{
     font-size:1.5rem
 }
 .tag{
-    background:var(--primary);
+    background:#e83b3b;
     padding:6px 10px;
     border-radius:6px;
     font-size:.75rem;
@@ -221,14 +213,14 @@ body{
     font-size:1.15rem
 }
 .service-card p,.review-card p{
-    color:var(--muted);line-height:1.7
+    color:#687386;line-height:1.7
 }
 .stars{color:#f5a623;
     letter-spacing:3px;
     margin-bottom:15px
 }
 .location-section{
-    background:var(--dark);color:#fff
+    background:#0b1220;color:#fff
 }
 .location-box{
     display:grid;
@@ -267,7 +259,7 @@ footer p{
     font-size:.85rem
 }
 .form-page{
-    background:var(--light)
+    background:#f4f6f9
 }
 .form-wrapper,.results-wrapper{
     padding:70px 0 100px;
@@ -282,7 +274,7 @@ footer p{
 }
 .form-header p:not(.eyebrow)
 {
-    color:var(--muted)
+    color:#687386
 }
 .form-card{
     background:#fff;
@@ -300,12 +292,12 @@ footer p{
     border-radius:10px
 }
 .form-control:focus,.form-select:focus{
-    border-color:var(--primary);
+    border-color:#e83b3b;
     box-shadow:0 0 0 .2rem rgba(232,59,59,.12)
 }
 .result-count{
     font-weight:700;
-    color:var(--muted);
+    color:#687386;
     margin-bottom:15px
 }
 .results-grid{
@@ -326,14 +318,14 @@ footer p{
 }
 .result-card p{
     margin:.45rem 0;
-    color:var(--muted)
+    color:#687386
 }
 .result-number{
     position:absolute;
     right:20px;
     top:20px;
     background:#ffe8e8;
-    color:var(--primary);
+    color:#e83b3b;
     font-weight:800;
     padding:5px 9px;
     border-radius:7px
@@ -346,13 +338,13 @@ footer p{
     background:#fff;
     padding:70px 20px;
     border-radius:20px;
-    color:var(--muted)
+    color:#687386
 }
 .empty-state div{
     font-size:3rem
 }
 .empty-state h2{
-    color:var(--text)
+    color:#182235
 }
 
 .kepfelirat{
@@ -360,7 +352,7 @@ footer p{
     background:#fff;
     padding:70px 20px;
     border-radius:20px;
-    color:var(--muted)
+    color:#687386
 }
 
 @media(max-width:992px){

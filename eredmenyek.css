@@ -1,14 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
+*{
+    box-sizing:border-box
+}
+html
+{
+    scroll-behavior:smooth
+}
+body{
+    font-family:Inter,Arial,sans-serif;
+        color:#182235;;margin:0;
+        background:#fff
+    }
 .form-page{
-    background:var(--light)
+    background:#f4f6f9;
 }
 
 .navbar{
     background:rgba(11,18,32,.97);
     padding:14px 0
 }
-
 .form-wrapper,.results-wrapper{
     padding:70px 0 100px;
     min-height:calc(100vh - 130px)
@@ -17,11 +28,63 @@
 .form-header{
     margin-bottom:35px
 }
-
-.navbar-brand{font-size:1.45rem;
-    letter-spacing:-.04em
+.navbar {
+    background: rgba(11, 18, 32, .97);
+    padding: 14px 0
 }
 
-.navbar-brand span{
-    color:var(--primary)
+.navbar-brand {
+    font-size: 1.45rem;
+    letter-spacing: -.04em
+}
+
+.navbar-brand span {
+    color: #e83b3b
+}
+
+.nav-link {
+    color: #dce3ef
+}
+
+.nav-link:hover {
+    color: #fff
+}
+
+/* Ezt kell a Javascripthez: */
+.rejtett {
+    display: none;
+}
+
+.eyebrow {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: .16em;
+    color: #e83b3b;
+    margin-bottom: 10px
+}
+.btn-primary{
+    background:#e83b3b;
+    border-color:#e83b3b;
+    font-weight:700
+}
+.btn-primary:hover{
+    background:#c92d2d;
+    border-color:#c92d2d;
+    transform:translateY(-2px)
+}
+footer{
+    background:#070d17;
+    color:#8d99aa;
+    padding:30px 0
+}
+footer strong{
+    color:#fff
+}
+footer p{
+    font-size:.85rem
+}
+.form-header h1{font-style: bold;
+    font-size: 50px;
+    font-weight:800;
+    letter-spacing:-.05em
 }
