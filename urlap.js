@@ -24,67 +24,70 @@ for (let i = 2025; i >= 1995; i--) {
 
 divNemElektromos.classList.add("rejtett"); //CSS kell hozzá
 divElektromos.classList.add("rejtett");
-divNemElektromos.classList.add("rejtett"); 
+divNemElektromos.classList.add("rejtett");
 divElektromos.classList.add("rejtett");
 
-for (let i = 0; i < uzemanyag.length; i++) {
-  uzemanyag[i].addEventListener("change", function () {
-    if (uzemanyag[i].checked) {
-      if (uzemanyag[i].value === "elektromos") {
-        divElektromos.classList.remove("rejtett");
-        divNemElektromos.classList.add("rejtett");
-      } else {
-        divNemElektromos.classList.remove("rejtett");
-        divElektromos.classList.add("rejtett");
-      }
-    }
-  })
-}
 
 uzemanyag.forEach(gomb => {
-    gomb.addEventListener("change", () => {
-        const elektromos = gomb.value === "elektromos";
-        divNemElektromos.classList.toggle("rejtett", elektromos)
-        divElektromos.classList.toggle("rejtett", !elektromos) // Ezen kell dolgozni, az elektromos része nem működik
-    });
+  gomb.addEventListener("change", () => {
+    const elektromos = gomb.value === "elektromos";
+    divNemElektromos.classList.toggle("rejtett", elektromos)
+    divElektromos.classList.toggle("rejtett", !elektromos)
+  });
 });
 
 
 const keret = Number(budget.value);
 
 if (
-    budget.value !== "" &&
-    (keret < 500000 || keret > 50000000))
-    {
-        budget.classList.add();
-        helyes = false;
-    } 
-    else {
-        budget.classList.remove();
-    }
+  budget.value !== "" &&
+  (keret < 500000 || keret > 50000000)) {
+  budget.classList.add();
+  helyes = false;
+}
+else {
+  budget.classList.remove();
+}
 
 function datumBeallitasa() {
+  const ma = new Date();
+  let ev = ma.getFullYear();
+  let honap = ma.getMonth() + 1;
+  let nap = ma.getDate();
 
-const ma = new Date();
-let ev = ma.getFullYear();
-let honap = ma.getMonth() + 1;
-let nap = ma.getDate();
-
-if (honap < 10) {
+  if (honap < 10) {
     honap = "0" + honap;
-}
+  }
 
-if (nap < 10) {
+  if (nap < 10) {
     nap = "0" + nap;
-}
-datum.min = ev + "-" + honap + "-" + nap; //Ez úgy működik, hogy a mai naptól tudod csak leadni a rendelést.
+  }
+  datum.min = ev + "-" + honap + "-" + nap; //Ez úgy működik, hogy a mai naptól tudod csak leadni a rendelést.
+
+  //maxdátum
+  const maxDatum = new Date();
+  maxDatum.setFullYear(maxDatum.getFullYear() + 1);
+
+  let maxEv = maxDatum.getFullYear();
+  let maxHonap = maxDatum.getMonth() + 1;
+  let maxNap = maxDatum.getDate();
+
+  if (maxHonap < 10) {
+    maxHonap = "0" + maxHonap;
+  }
+
+  if (maxNap < 10) {
+    maxNap = "0" + maxNap;
+  }
+
+  datum.max = maxEv + "-" + maxHonap + "-" + maxNap;
 
 }
 datumBeallitasa();
 
 // Karakterhosszúság
 uzenet.addEventListener("input", function () {
-    KarakterHosszusag.textContent = uzenet.value.length;
+  KarakterHosszusag.textContent = uzenet.value.length;
 });
 
 

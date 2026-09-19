@@ -4,25 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Érdeklődések | AutoNova</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script defer src="script.js"></script>
   <link rel="stylesheet" href="eredmenyek.css">
 </head>
+
 <body class="form-page">
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-  <div class="container"><a class="navbar-brand fw-bold" href="index.html">Auto<span>Nova</span></a><a class="btn btn-outline-light" href="index.html">Főoldal</a></div>
-</nav>
-<main class="results-wrapper">
-  <div class="container">
-    <div class="form-header">
-      <p class="eyebrow">ADMINISZTRÁCIÓS NÉZET</p>
-      <h1>Beküldött érdeklődések</h1>
-      <p>Az űrlapon beküldött eredmények ezen a külön oldalon jelennek meg.</p>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container"><a class="navbar-brand fw-bold" href="index.html">Auto<span>Nova</span></a><a
+        class="btn btn-outline-light" href="index.html">Főoldal</a></div>
+  </nav>
+  <main class="results-wrapper">
+    <div class="container">
+      <div class="form-header">
+        <h1>Beküldött érdeklődések</h1>
+      </div>
+      <p>Név: <span id="eredmenyNev"></span></p>
+      <p>Email: <span id="eredmenyEmail"></span></p>
+      <p>Telefonszám: <span id="eredmenyTelefonszam"></span></p>
+      <p>Márka: <span id="eredmenyMarka"></span></p>
+      <p>Évjárat: <span id="eredmenyEvjarat"></span></p>
+      <p>Márka: <span id="eredmenyTipus"></span></p>
+      <p>Keret: <span id="eredmenyBudget"></span> Ft</p>
+      <p>Vásárlás dátuma: <span id="eredmenyDate"></span></p>
+      <p>Megjegyzés: <span id="eredmenyMessage"></span></p>
+      <div id="results"></div>
+      <div class="mt-4 d-flex gap-2"><a href="urlap.html" class="btn btn-primary">Új érdeklődés</a><button
+          id="clearResults" class="btn btn-outline-danger">Összes törlése</button></div>
     </div>
-    <div id="results"></div>
-    <div class="mt-4 d-flex gap-2"><a href="urlap.html" class="btn btn-primary">Új érdeklődés</a><button id="clearResults" class="btn btn-outline-danger">Összes törlése</button></div>
-  </div>
-</main>
-<footer><div class="container text-center"><p class="mb-0">© 2026 AutoNova – Minden jog fenntartva.</p></div></footer>
-<script src="script.js"></script>
+  </main>
+  <footer>
+    <div class="container text-center">
+      <p class="mb-0">© 2026 AutoNova – Minden jog fenntartva.</p>
+    </div>
+  </footer>
 </body>
+
 </html>
