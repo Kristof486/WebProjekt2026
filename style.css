@@ -71,7 +71,7 @@ body{
     display:flex;
     flex-direction:column
 }
-.hero-stats strong{
+.hero-stats bold{
     font-size:1.35rem
 }
 .hero-stats small{
@@ -102,7 +102,7 @@ body{
     color:#687386;
     margin:0 0 15px
 }
-.hero-card-body strong{
+.hero-card-body b{
     font-size:1.35rem
 }
 .hero-card-badge{
@@ -173,9 +173,7 @@ body{
 .carousel-caption p{
     font-size:1rem
 }
-.carousel-caption strong{
-    font-size:1.5rem
-}
+
 .tag{
     background:#e83b3b;
     padding:6px 10px;
@@ -204,10 +202,7 @@ body{
     transform:translateY(-8px)
     ;box-shadow:0 18px 45px rgba(20,30,50,.13)
 }
-.icon{
-    font-size:2rem;
-    margin-bottom:20px
-}
+
 .service-card h3,.review-card h3{
     font-weight:800;
     font-size:1.15rem
@@ -244,7 +239,7 @@ body{
 .map-placeholder span{
     font-size:3rem
 }
-.map-placeholder strong{
+.map-placeholder b{
     font-size:1.3rem
 }
 footer{
@@ -252,7 +247,7 @@ footer{
     color:#8d99aa;
     padding:30px 0
 }
-footer strong{
+footer b{
     color:#fff
 }
 footer p{
@@ -268,7 +263,8 @@ footer p{
 .form-header{
     margin-bottom:35px
 }
-.form-header h1{font-size:clamp(2rem,5vw,3.5rem);
+.form-header h1{
+    font-size:clamp(2rem,5vw,3.5rem);
     font-weight:800;
     letter-spacing:-.05em
 }

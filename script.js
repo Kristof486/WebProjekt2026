@@ -37,3 +37,16 @@ parameterek.get("date");
 
 document.getElementById("eredmenyMessage").textContent =
 parameterek.get("message");
+
+function torles(){
+document.getElementById("eredmenyNev").textContent =""
+document.getElementById("eredmenyEmail").textContent =""
+document.getElementById("eredmenyTelefonszam").textContent =""
+document.getElementById("eredmenyMarka").textContent =""
+document.getElementById("eredmenyEvjarat").textContent =""
+document.getElementById("eredmenyTipus").textContent =""
+document.getElementById("eredmenyBudget").textContent =""
+document.getElementById("eredmenyDate").textContent =""
+document.getElementById("eredmenyMessage").textContent ="";
+
+}
