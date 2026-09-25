@@ -1,15 +1,5 @@
 const parameterek = new URLSearchParams(window.location.search);
 
-const nev = parameterek.get("name");
-const email = parameterek.get("email");
-const evjarat = parameterek.get("evjarat");
-const budget = parameterek.get("budget");
-const marka=parameterek.get("marka")
-
-console.log(nev);
-console.log(email);
-console.log(evjarat);
-console.log(budget);
 
 document.getElementById("eredmenyNev").textContent =
 parameterek.get("name");

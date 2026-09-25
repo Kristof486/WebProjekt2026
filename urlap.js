@@ -15,7 +15,7 @@ alapOpcio.value = "";
 alapOpcio.textContent = "Válassz évjáratot...";
 selectEvjarat.appendChild(alapOpcio);
 
-for (let i = 2025; i >= 1995; i--) {
+for (let i = 2026; i >= 1986; i--) {
   const opcio = document.createElement("option");
   opcio.value = i;
   opcio.textContent = i;
@@ -23,8 +23,6 @@ for (let i = 2025; i >= 1995; i--) {
 }
 
 divNemElektromos.classList.add("rejtett"); //CSS kell hozzá
-divElektromos.classList.add("rejtett");
-divNemElektromos.classList.add("rejtett");
 divElektromos.classList.add("rejtett");
 
 

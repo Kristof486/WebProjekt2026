@@ -56,13 +56,6 @@ body{
     display: none;
 }
 
-.eyebrow {
-    font-size: 18px;
-    font-weight: 800;
-    letter-spacing: .16em;
-    color: #e83b3b;
-    margin-bottom: 10px
-}
 .btn-primary{
     background:#e83b3b;
     border-color:#e83b3b;
@@ -78,7 +71,7 @@ footer{
     color:#8d99aa;
     padding:30px 0
 }
-footer bold{
+footer b{
     color:#fff
 }
 footer p{

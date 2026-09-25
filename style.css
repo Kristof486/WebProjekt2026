@@ -41,44 +41,39 @@ body{
     border-color:#c92d2d;
     transform:translateY(-2px)
 }
-.hero{
+.auto{
     background:radial-gradient(circle at 80% 20%,#243a60 0,#111c30 42%,#0b1220 80%);
     color:#fff;padding:90px 0 80px;overflow:hidden
 }
-.hero h1{
+.auto h1{
     font-size:clamp(2.6rem,6vw,5rem);
     font-weight:800;line-height:1.03;
     letter-spacing:-.06em
 }
-.hero h1 span{
+.auto h1 span{
     color:#ff5b5b
 }
-.hero .lead{
+.auto .lead{
     color:#c5cedc;max-width:680px;
     font-size:1.08rem;line-height:1.8
 }
-.eyebrow{
-    font-size:.76rem;
-    font-weight:800;
-    letter-spacing:.16em;color:#e83b3b;
-    margin-bottom:10px
-}
-.hero-stats{
+
+.auto-stats{
     display:flex;gap:35px;
     margin-top:45px
 }
-.hero-stats div{
+.auto-stats div{
     display:flex;
     flex-direction:column
 }
-.hero-stats bold{
+.auto-stats b{
     font-size:1.35rem
 }
-.hero-stats small{
+.auto-stats small{
     color:#9da9ba;
     margin-top:3px
 }
-.hero-card{
+.auto-card{
     background:#fff;
     color:#182235;
     border-radius:20px;
@@ -87,25 +82,25 @@ body{
     transform:rotate(1deg);
     animation:floatCard 4s ease-in-out infinite
 }
-.hero-card img{
+.auto-card img{
     width:100%;
     height:260px;
-    object-fit:cover
+    object-fit:cover;
 }
-.hero-card-body{
+.auto-card-body{
     padding:22px
 }
-.hero-card-body h3{
+.auto-card-body h3{
     margin:0 0 5px
 }
-.hero-card-body p{
+.auto-card-body p{
     color:#687386;
     margin:0 0 15px
 }
-.hero-card-body b{
+.auto-card-body b{
     font-size:1.35rem
 }
-.hero-card-badge{
+.auto-card-badge{
     position:absolute;
     top:15px;
     left:15px;
@@ -156,7 +151,7 @@ body{
 .carousel-item>img{
     height:100%;
     object-fit:cover;
-    filter:brightness(.65)
+    filter:brightness(.55)
 }
     
 .carousel-caption{
@@ -212,7 +207,9 @@ body{
 }
 .stars{color:#f5a623;
     letter-spacing:3px;
-    margin-bottom:15px
+    margin-bottom:15px;
+    font-size: 37px
+
 }
 .location-section{
     background:#0b1220;color:#fff
@@ -223,9 +220,7 @@ body{
     gap:50px;
     align-items:center
 }
-.location-box p:not(.eyebrow){
-    color:#b7c0ce
-}
+
 .map-placeholder{
     min-height:270px;
     border-radius:20px;
@@ -329,19 +324,6 @@ footer p{
 .result-card small{
     color:#929baa
 }
-.empty-state{
-    text-align:center;
-    background:#fff;
-    padding:70px 20px;
-    border-radius:20px;
-    color:#687386
-}
-.empty-state div{
-    font-size:3rem
-}
-.empty-state h2{
-    color:#182235
-}
 
 .kepfelirat{
     text-align:center;
@@ -355,7 +337,7 @@ footer p{
     .service-grid{
         grid-template-columns:repeat(2,1fr)
     }
-    .hero{
+    .auto{
         padding-top:60px
     }
     .location-box{
@@ -378,10 +360,10 @@ footer p{
     .review-grid,.results-grid{
         grid-template-columns:1fr
     }
-    .hero-stats{
+    .auto-stats{
         gap:20px
     }
-    .hero-card{
+    .auto-card{
         margin-top:15px
     }
     .carousel-item{
@@ -398,10 +380,10 @@ footer p{
     .service-grid{
         grid-template-columns:1fr
     }
-    .hero h1{
+    .auto h1{
         font-size:2.7rem
     }
-    .hero-stats{
+    .auto-stats{
         flex-wrap:wrap
     }
     .carousel-item{
