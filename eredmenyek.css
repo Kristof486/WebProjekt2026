@@ -16,10 +16,6 @@ body{
     background:#f4f6f9;
 }
 
-.navbar{
-    background:rgba(11,18,32,.97);
-    padding:14px 0
-}
 .form-wrapper,.results-wrapper{
     padding:70px 0 100px;
     min-height:calc(100vh - 130px)
@@ -43,18 +39,6 @@ body{
     color: #e83b3b
 }
 
-.nav-link {
-    color: #dce3ef
-}
-
-.nav-link:hover {
-    color: #fff
-}
-
-/* Ezt kell a Javascripthez: */
-.rejtett {
-    display: none;
-}
 
 .btn-primary{
     background:#e83b3b;
@@ -77,8 +61,19 @@ footer b{
 footer p{
     font-size:.85rem
 }
-.form-header h1{font-style: bold;
+.form-header h1{
     font-size: 50px;
     font-weight:800;
     letter-spacing:-.05em
+}
+
+@media(max-width:768px){
+    .results-wrapper{
+        padding:40px 15px 60px;
+    }
+
+    .form-header h1{
+        font-size:36px;
+    }
+
 }

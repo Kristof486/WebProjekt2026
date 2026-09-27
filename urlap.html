@@ -30,7 +30,7 @@
           <div class="row g-4">
             <div class="col-md-6">
               <label for="name" class="form-label">Név</label>
-              <input id="name" name="name" type="text" class="form-control" minlength="3" maxlength="60">
+              <input id="name" name="name" type="text" class="form-control" minlength="3" maxlength="60" required>
               <div class="invalid-feedback">A név legalább 3 karakter legyen.
               </div>
             </div>
@@ -52,7 +52,7 @@
             </div>
             <div class="col-md-6">
               <label for="evjarat" class="form-label">Évjárat(1986-2026)</label>
-              <select id="evjarat" name="evjarat" class="form-control" minlength="3" maxlength="60"></select>
+              <select id="evjarat" name="evjarat" class="form-select"></select>
             </div>
             <div class="col-md-6">
               <label for="tipus" class="form-label">Keresett autó típusa</label>
@@ -98,11 +98,11 @@
                 <input id="dízel" name="uzemanyag" type="radio" value="dízel">
                 <label for="dízel">Dízel</label>
                 <br>
-                <input id="benzinh" name="uzemanyag" type="radio" value="benzinh">
+                <input id="benzinhybrid" name="uzemanyag" type="radio" value="benzinhybrid">
                 <label for="benzinh">Hybrid/Benzin</label>
                 <br>
-                <input id="dízelh" name="uzemanyag" type="radio" value="dízelh">
-                <label for="dízelh">Hybrid/Dízel</label>
+                <input id="dízelhybrid" name="uzemanyag" type="radio" value="dízelhybrid">
+                <label for="dízelhybrid">Hybrid/Dízel</label>
                 <br>
                 <input id="elektromos" name="uzemanyag" type="radio" value="elektromos">
                 <label for="elektromos">Elektromos</label>

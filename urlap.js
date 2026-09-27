@@ -36,6 +36,7 @@ uzemanyag.forEach(gomb => {
 
 
 const keret = Number(budget.value);
+let helyes=true;
 
 if (
   budget.value !== "" &&

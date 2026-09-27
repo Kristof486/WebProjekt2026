@@ -28,6 +28,15 @@ parameterek.get("date");
 document.getElementById("eredmenyMessage").textContent =
 parameterek.get("message");
 
+document.getElementById("eredmenyUzemanyag").textContent =
+    parameterek.get("uzemanyag");
+
+document.getElementById("eredmenyHenger").textContent =
+    parameterek.get("nemelektromos");
+
+document.getElementById("eredmenyAkku").textContent =
+    parameterek.get("elektromosoknak");
+
 function torles(){
 document.getElementById("eredmenyNev").textContent =""
 document.getElementById("eredmenyEmail").textContent =""
@@ -37,6 +46,9 @@ document.getElementById("eredmenyEvjarat").textContent =""
 document.getElementById("eredmenyTipus").textContent =""
 document.getElementById("eredmenyBudget").textContent =""
 document.getElementById("eredmenyDate").textContent =""
-document.getElementById("eredmenyMessage").textContent ="";
+document.getElementById("eredmenyMessage").textContent =""
+document.getElementById("eredmenyUzemanyag").textContent =""
+document.getElementById("eredmenyHenger").textContent =""
+document.getElementById("eredmenyAkku").textContent ="";
 
 }
